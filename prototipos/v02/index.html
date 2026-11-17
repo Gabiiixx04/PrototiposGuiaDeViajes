@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f0">
+  <meta name="description" content="Vive Ibarra, Ecuador: lugares turísticos, restaurantes y espacios para hacer deporte en equipo o individual. Planifica tu ruta y encuentra vuelos a Quito para llegar a Ibarra.">
+  <meta property="og:title" content="Ibarra Viva · Qué bonito volver">
+  <meta property="og:description" content="Tu próxima historia empieza entre lagunas, arte y sabores de los Andes ecuatorianos.">
+  <meta property="og:type" content="website">
+  <title>Ibarra Viva · Qué bonito volver</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('ibarra-archivo-v02-theme') || 'light'; } catch {}
+  </script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <aside class="sidebar" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Ibarra Viva, inicio">
+      <span class="brand-name">ibarra<span class="brand-sun">✳</span></span>
+      <span class="brand-caption">QUÉ BONITO VOLVER</span>
+    </a>
+    <p class="nav-eyebrow">TU PRÓXIMA HISTORIA</p>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom">
+      <a class="sidebar-note" href="#guia">
+        <span class="note-icon" id="note-icon"></span>
+        <span>Un pequeño destino.<br><strong>Mucho por descubrir.</strong></span>
+        <span class="note-arrow">↗</span>
+        <svg class="mountain-art" viewBox="0 0 200 75" fill="none" aria-hidden="true"><path d="M-10 70 45 25 65 40 101 3 148 49 169 31 212 71"/><path d="m64 40 37-37 8 26 15 1 24 19M13 75l33-35 10 8 45-31 40 46 28-18 33 30"/><path d="M-10 80 42 60 64 64 101 40 142 72 169 59 220 80"/></svg>
+      </a>
+      <div class="sidebar-location"><img class="ecuador-flag" src="./assets/ecuador.svg" alt="Bandera de Ecuador" width="26" height="17"> Ibarra, Ecuador <span>EC</span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="mobile-brand" href="#inicio">ibarra<span>✳</span></a>
+      <a class="country-badge" href="#guia" aria-label="Ecuador: guía de viaje"><img class="ecuador-flag" src="./assets/ecuador.svg" alt="Bandera de Ecuador" width="32" height="22"><span>Ecuador</span></a>
+      <div class="location-label" id="location-label"></div>
+      <div class="topbar-actions">
+        <form id="search-form" role="search" class="search-box">
+          <label for="global-search" class="sr-only">Buscar un lugar, restaurante o experiencia</label>
+          <button class="search-submit" type="submit" aria-label="Buscar" id="search-icon"></button>
+          <input type="search" id="global-search" placeholder="Encuentra tu próximo plan…" autocomplete="off" maxlength="100">
+          <kbd aria-hidden="true">↵</kbd>
+        </form>
+        <button id="theme-toggle" class="icon-button theme-button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema"></button>
+        <a href="#itinerario" class="top-trip" id="top-trip"></a>
+      </div>
+    </header>
+    <main id="contenido" tabindex="-1"></main>
+    <footer class="footer"><a href="#inicio" class="footer-brand">ibarra<span>✳</span></a><span>Un rincón del Ecuador. Mil formas de vivirlo.</span><a href="#vuelos" class="footer-flights">Vuelos a Ecuador ↗</a><a href="#fuentes">Fuentes y créditos <span aria-hidden="true">↗</span></a></footer>
+  </div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Navegación móvil"></nav>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

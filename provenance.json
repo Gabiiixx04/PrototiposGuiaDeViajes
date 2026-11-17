@@ -1,0 +1,22 @@
+[
+  {
+    "version": "v01",
+    "source_commit": "244a07a6a73e52df834c9f395f4357ef18f3d18a",
+    "source_directory": "dist",
+    "files": 31,
+    "storage_isolation_files": [
+      "app.js",
+      "index.html"
+    ]
+  },
+  {
+    "version": "v02",
+    "source_commit": "1854a40d1f8878ac7680c4c8bc1c79ee135cd80a",
+    "source_directory": "dist",
+    "files": 34,
+    "storage_isolation_files": [
+      "app.js",
+      "index.html"
+    ]
+  }
+]
